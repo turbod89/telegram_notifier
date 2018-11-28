@@ -1,0 +1,9 @@
+{
+    "telegram-base-url": "https://api.telegram.org/",
+    "telegram-bot-token": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11",
+    "paths": {
+        "home": "/repos",
+        "sailbs_repo": "sailbs_back",
+        "sailbs_doc": "sailbs_back_doc"
+    }
+}
