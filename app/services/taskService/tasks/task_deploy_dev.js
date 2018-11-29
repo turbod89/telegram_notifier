@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 const { spawn } = require('child_process');
 
 module.exports = function (message) {
-    if ( !message.text || message.text.toLowerCase() !== 'deploy dev') {
+    if ( !message.text || !(/^\/deploy +dev/ig.test(message.text.toLowerCase()) ) ) {
         return this;
     }
     const self = this;
