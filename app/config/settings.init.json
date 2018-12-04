@@ -3,7 +3,28 @@
     "telegram-bot-token": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11",
     "paths": {
         "home": "/repos",
-        "sailbs_repo": "sailbs_back",
-        "sailbs_doc": "sailbs_back_doc"
+        "backend_repos": {
+            "prod": {
+                "repo": "repo_prod",
+                "docs": "repo_prod_docs",
+                "branch": "master"
+            },
+            "test1": {
+                "repo": "repo_test1",
+                "docs": "repo_test1_docs",
+                "branch": "dev"
+            },
+            "test2": {
+                "repo": "repo_test2",
+                "docs": "repo_test2_docs",
+                "branch": "dev"
+            },
+            "test3": {
+                "repo": "repo_test3",
+                "docs": "repo_test3_docs",
+                "branch": "dev"
+            }
+        }
+
     }
 }

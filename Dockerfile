@@ -11,6 +11,6 @@ EXPOSE 3000
 # map and mount
 VOLUME ["/app"]
 VOLUME ["/repos"]
-VOLUME ["/root"]
+VOLUME ["/root/.ssh"]
 WORKDIR /app
 CMD ["/bin/bash"]

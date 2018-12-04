@@ -1,6 +1,6 @@
 module.exports = [
     require('./task_commands'),
-    require('./task_deploy_dev'),
+    require('./task_deploy'),
 
     function (update) {
         if (!!update.inline_query && !!update.inline_query.query) {

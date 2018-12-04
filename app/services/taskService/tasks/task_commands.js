@@ -9,9 +9,15 @@ _*Commands*_
 
 - */commands*: Show commands.
 
-- */deploy* dev|prod : If _dev_ argument is selected, sets test server ahead in branch dev.
+- */deployprod*: Sets prod server ahead in branch master.
+
+- */deploytest1*: Sets test1 server ahead in branch dev.
+
+- */deploytest2*: Sets test2 server ahead in branch dev.
+
+- */deploytest3*: Sets test3 server ahead in branch dev.
 `;
 
     this.send_service.send(text,to,{parse_mode: 'Markdown'});
     return this;
-}
+};

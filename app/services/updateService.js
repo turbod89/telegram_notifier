@@ -30,7 +30,7 @@ const UpdateServiceFactory = function UpdateServiceFactory() {
             offset: 0,
             timeout: 60,
             limit: 100,
-        }
+        };
 
 
         const custom_data = {};
@@ -69,7 +69,7 @@ const UpdateServiceFactory = function UpdateServiceFactory() {
             
                     baseService.get('/getUpdates',params).then( response => {
                         if (!response.ok || !response.result || !Array.isArray(response.result)) {
-                            console.error('UpdateService: Unexpected response.');
+                            console.error('UpdateService: Unexpected response.',response);
                             return false;
                         } else {
 
@@ -84,7 +84,11 @@ const UpdateServiceFactory = function UpdateServiceFactory() {
 
                             return this.call();
                         }
-                    });
+                    }).catch( error => {
+                        console.error(error);
+                        return this.call();
+                    })
+                    ;
                 }
             }
         });
