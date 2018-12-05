@@ -70,7 +70,8 @@ const UpdateServiceFactory = function UpdateServiceFactory() {
                     baseService.get('/getUpdates',params).then( response => {
                         if (!response.ok || !response.result || !Array.isArray(response.result)) {
                             console.error('UpdateService: Unexpected response.',response);
-                            return false;
+                            throw Error('UpdateService: Unexpected response.');
+                            return false
                         } else {
 
                             response.result.forEach(update => {
